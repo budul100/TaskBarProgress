@@ -22,6 +22,15 @@ namespace TaskBarProressTests
                 TaskBarProgress.Progress.SetValue(index, maxIndex);
 
                 Thread.Sleep(100);
+
+                if (index == 50)
+                {
+                    TaskBarProgress.Progress.SetState(TaskBarProgress.Enums.TaskbarStates.Paused);
+
+                    Thread.Sleep(2000);
+
+                    TaskBarProgress.Progress.SetState(TaskBarProgress.Enums.TaskbarStates.Normal);
+                }
             }
 
             TaskBarProgress.Progress.SetState(TaskBarProgress.Enums.TaskbarStates.NoProgress);
