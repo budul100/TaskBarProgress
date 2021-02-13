@@ -7,6 +7,7 @@
     <Product>budul.TaskBarProgress</Product>
     <Description>Show progress on an application's windows taskbar icon</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/budul100/TaskBarProgress</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
